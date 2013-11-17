@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+@import play.mvc.Http.Context.Implicit._
+
+<html>
+<head>
+    <title>The Graphinator</title>
+    <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("css/bootstrap.min.css"))'>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.min.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <link rel="stylesheet" type="text/css" href="/assets/index.css">
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))'></script>
+    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.flot.js"))'></script>
+    <script type='text/javascript' src='@routes.Assets.at("javascripts/index.min.js")'></script>
+    <script type='text/javascript' src='/assets/index_page.js'></script>
+</head>
+
+<body class = "root-container">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#">The Graphinator</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="searchBar">
+    	<div class = "jumbotron">
+    		<h1 align = "center"> Explore Aladdin! </h1>
+    	</div>
+        <form id="searchQuery" action="parse">
+    	    <input name = "querytext" id="querytext" style=" margin: 75px; width:300px; margin-right:auto; margin-left:500px;" align = "middle" type="text" size="400" placeholder="What do you want to know?">
+        	<button type="submit" class="btn" style="width: 52px; margin: 300px margin-left: 82px; background: #FA4">Ask</button>
+	    </form>
+    </div>
+</body>
+    
+</html>

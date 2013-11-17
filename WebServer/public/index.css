@@ -1,0 +1,18 @@
+/* Big font messages */
+
+.root-container{
+  background-color:#011110;
+}
+
+.jumbotron {
+  padding: 40px;
+  margin: 100px 0px 60px;
+  text-align: center;
+  color: #CF5300; 
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+.jumbotron h1 {
+  font-size: 60px;
+  line-height: 1;
+}
